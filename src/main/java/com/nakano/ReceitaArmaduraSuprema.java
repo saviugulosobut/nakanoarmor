@@ -2,6 +2,7 @@ package com.nakano;
 
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.ItemEnchantmentsComponent;
+import net.minecraft.component.type.UnbreakableComponent;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.enchantment.Enchantments;
@@ -100,6 +101,7 @@ public class ReceitaArmaduraSuprema extends SpecialCraftingRecipe {
         }
 
         resultado.set(DataComponentTypes.ENCHANTMENTS, b.build());
+        resultado.set(DataComponentTypes.UNBREAKABLE, new UnbreakableComponent(true));
         return resultado;
     }
 
