@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "nakano",
+  "version": "${version}",
+  "name": "Nakano Armor",
+  "authors": ["NakanoBot"],
+  "environment": "*",
+  "entrypoints": { "main": ["com.nakano.NakanoArmor"] },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
