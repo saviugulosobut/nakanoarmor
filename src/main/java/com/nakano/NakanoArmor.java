@@ -23,7 +23,7 @@ public class NakanoArmor implements ModInitializer {
     // 0 = Resistência I, 1 = II, 2 = III, 3 = IV, 4 = V
     public static final int RESISTENCIA = 3;
     // 0 = Força I, 1 = II, 2 = III
-    public static final int FORCA = 1;
+    public static final int FORCA = 2;
 
     private static final RegistryKey<Enchantment> PROTECAO_X =
         RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(MOD_ID, "protecao_x"));
