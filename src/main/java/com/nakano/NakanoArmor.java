@@ -7,6 +7,5 @@ public class NakanoArmor implements ModInitializer {
 
     @Override
     public void onInitialize() {
-        ModArmor.registrar();
     }
 }
