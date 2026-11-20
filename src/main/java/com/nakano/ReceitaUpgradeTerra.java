@@ -45,7 +45,7 @@ public class ReceitaUpgradeTerra extends SpecialCraftingRecipe {
         ItemStack peca = ItemStack.EMPTY;
         int terra = 0;
         int pecas = 0;
-        for (int i = 0; i < input.size(); i++) {
+        for (int i = 0; i < input.getSize(); i++) {
             ItemStack s = input.getStackInSlot(i);
             if (s.isEmpty()) continue;
             if (s.isOf(Items.DIRT)) {
@@ -70,7 +70,7 @@ public class ReceitaUpgradeTerra extends SpecialCraftingRecipe {
     @Override
     public ItemStack craft(CraftingRecipeInput input, RegistryWrapper.WrapperLookup lookup) {
         ItemStack resultado = ItemStack.EMPTY;
-        for (int i = 0; i < input.size(); i++) {
+        for (int i = 0; i < input.getSize(); i++) {
             ItemStack s = input.getStackInSlot(i);
             if (s.isIn(ARMADURA_DIAMANTE)) resultado = s.copy();
         }
