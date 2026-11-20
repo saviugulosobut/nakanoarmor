@@ -33,6 +33,7 @@ public class NakanoArmor implements ModInitializer {
     @Override
     public void onInitialize() {
         ReceitaArmaduraSuprema.registrar();
+                ReceitaUpgradeTerra.registrar();
 
         ServerTickEvents.END_SERVER_TICK.register(server -> {
             int tick = server.getTicks();
