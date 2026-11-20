@@ -39,7 +39,7 @@ public class ModArmor {
             .maxDamage(tipo.getMaxDamage(45)).fireproof();
         return Registry.register(Registries.ITEM,
             Identifier.of(NakanoArmor.MOD_ID, nome),
-            new ArmorItem(NAKANO, tipo, s));
+            new NakanoArmorItem(NAKANO, tipo, s));
     }
 
     public static void registrar() {
