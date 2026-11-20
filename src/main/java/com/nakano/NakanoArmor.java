@@ -22,6 +22,8 @@ public class NakanoArmor implements ModInitializer {
     public static final int NIVEL_NECESSARIO = 10;
     // 0 = Resistência I, 1 = II, 2 = III, 3 = IV, 4 = V
     public static final int RESISTENCIA = 3;
+    // 0 = Força I, 1 = II, 2 = III
+    public static final int FORCA = 1;
 
     private static final RegistryKey<Enchantment> PROTECAO_X =
         RegistryKey.of(RegistryKeys.ENCHANTMENT, Identifier.of(MOD_ID, "protecao_x"));
@@ -42,6 +44,8 @@ public class NakanoArmor implements ModInitializer {
                 if (tick % 20 == 0 && conjuntoCompleto(jogador)) {
                     jogador.addStatusEffect(new StatusEffectInstance(
                         StatusEffects.RESISTANCE, 40, RESISTENCIA, true, false, false));
+                    jogador.addStatusEffect(new StatusEffectInstance(
+                        StatusEffects.STRENGTH, 40, FORCA, true, false, false));
                 }
             }
         });
